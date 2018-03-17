@@ -707,3 +707,7 @@ float Adafruit_ADS1015::voltsPerBit()
 	return v;
 }
 
+uint16_t Adafruit_ADS1015::getRawConfig ()
+{
+	return readRegister(m_i2cAddress, ADS1X15_REG_POINTER_CONFIG);
+}

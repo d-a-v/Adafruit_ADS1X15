@@ -229,6 +229,8 @@ protected:
   void      startContinuous_Differential_2_3(void);
   void      waitForConversion();
 
+  uint16_t  getRawConfig ();
+
  private:
 
 };
